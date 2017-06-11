@@ -55,7 +55,6 @@ File.open("#{directory}/#{program_name}",'w') do |f|
   f.puts klass::SPACER
   f.puts klass::COMMENT_MARKER
   f.puts "#{klass::COMMENT_MARKER} Program written as solution to \"#{challenge_name}\" challenge on codeeval.com"
-  f.puts "#{klass::COMMENT_MARKER} - Description"
   f.puts klass::COMMENT_MARKER
   f.puts klass::SPACER
   if klass::MONKEYPATCHING_HEADER
