@@ -1,6 +1,10 @@
+class Settings
+  AUTHOR = "MuffinTheMan (aka Caleb Larsen)"
+end
+
 class Ruby
   SPACER = "# ----- ----- ----- ------ ----- ----- ----- #"
-  AUTHOR_HEADER = "# Written by MuffinTheMan (aka Caleb Larsen) #"
+  AUTHOR_HEADER = "# Written by " + Settings::AUTHOR + " #"
   MONKEYPATCHING_HEADER = "#               MonkeyPatching               #"
   SCRIPT_HEADER = "#                   Script                   #"
   COMMENT_MARKER = "#"
@@ -10,7 +14,7 @@ end
 
 class PHP
   SPACER = "// ----- ----- ----- ------ ----- ----- ----- //"
-  AUTHOR_HEADER = "// Written by MuffinTheMan (aka Caleb Larsen) //"
+  AUTHOR_HEADER = "// Written by " + Settings::AUTHOR + " //"
   MONKEYPATCHING_HEADER = nil
   SCRIPT_HEADER = "//                   Script                   //"
   COMMENT_MARKER = "//"
@@ -22,7 +26,7 @@ end
 
 class Java
   SPACER = "// ----- ----- ----- ------ ----- ----- ----- //"
-  AUTHOR_HEADER = "// Written by MuffinTheMan (aka Caleb Larsen) //"
+  AUTHOR_HEADER = "// Written by " + Settings::AUTHOR + " //"
   MONKEYPATCHING_HEADER = nil
   SCRIPT_HEADER = "//                   Script                   //"
   COMMENT_MARKER = "//"
