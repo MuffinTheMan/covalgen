@@ -3,4 +3,5 @@
 DIRECTORY="$(pwd)"
 rm finish.sh
 cd ..
-mv "${DIRECTORY}" ../complete/
+mkdir -p ../complete
+mv "${DIRECTORY}" ../complete/ && cd ../../

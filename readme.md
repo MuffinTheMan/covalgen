@@ -8,8 +8,9 @@ Once finished with the setup, you will find your template under the folder that 
 
 `moderate/incomplete/flavius_josephus-rb/`
 
+Once you have successfully submitted your solution and wish to move it from the `incomplete` folder to the `complete` folder, run `. ./finish.sh`
+
 ## To Do:
 
 - Create settings file for user customization (author header, for example)
-- Create `finish` script to run when finished in order to move file to the completed folder
 - Automatically change to the new directory after setup script
