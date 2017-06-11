@@ -46,9 +46,10 @@ directory = "#{difficulty}/incomplete/#{challenge_name.downcase.split.join('_')}
 `mkdir #{directory}`
 `touch #{directory}/input.txt`
 `cp makefile-java #{directory}/makefile` if language === "Java"
+`cp finish.sh #{directory}/`
 
 File.open("#{directory}/#{program_name}",'w') do |f|
-  puts "<?php" if language === "PHP"
+  f.puts "<?php" if language === "PHP"
   f.puts klass::SPACER
   f.puts klass::AUTHOR_HEADER
   f.puts klass::SPACER
@@ -72,3 +73,7 @@ File.open("#{directory}/#{program_name}",'w') do |f|
   f.puts klass::OPEN_FILE
   f.puts "end" if language === "Ruby"
 end
+
+puts "Complete!"
+puts "Run the following command to find your new project:"
+puts "cd #{directory}/"
