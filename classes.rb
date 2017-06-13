@@ -31,16 +31,16 @@ class Java
   SCRIPT_HEADER = "//                   Script                   //"
   COMMENT_MARKER = "//"
   OPEN_FILE = "import java.io.*;\n\n\
-  public class Main {\n\
-      public static void main (String[] args) throws IOException {\n\
-          // Open file (name supplied as first argument) and read through one line at a time.\n\
-          File file = new File(args[0]);\n\
-          BufferedReader buffer = new BufferedReader(new FileReader(file));\n\
-          String line;\n\
-          while ((line = buffer.readLine()) != null) {\n\
-              line = line.trim();\n\
-              // Process line of input Here\n\
-          }\n\
-      }\n\
-  }"
+public class Main {\n\
+    public static void main (String[] args) throws IOException {\n\
+        // Open file (name supplied as first argument) and read through one line at a time.\n\
+        File file = new File(args[0]);\n\
+        BufferedReader buffer = new BufferedReader(new FileReader(file));\n\
+        String line;\n\
+        while ((line = buffer.readLine()) != null) {\n\
+            line = line.trim();\n\
+            // Process line of input Here\n\
+        }\n\
+    }\n\
+}"
 end
